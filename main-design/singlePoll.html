@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Single Poll</title>
+    <link rel="shortcut icon" href="./images/fav.png" type="image/png" />
+    <!-- Tailwind CSS Connection Library -->
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+
+    <style>
+        #bar{
+            margin-top: -24px;
+        }
+        input[type="radio"]{
+        width: 18px;
+        height: 18px;
+        border: 1px solid rgb(68, 96, 255);
+        border-radius: 100%;
+        background: #fff;
+        }
+        @media (min-width: 768px) {
+            #bar{
+            
+            margin-top: -30px;
+        } 
+        }
+    </style>
+  </head>
+  <body class="bg-blue-100">
+    <div class="h-screen bg-blue-100 flex items-center main">
+      <div class="container mx-auto px-2 md:py-0">
+        <div
+          class="
+            form-container
+            py-10
+            px-2
+            md:py-12 md:px-20
+            bordered
+            shadow-lg
+            rounded-3xl
+            ring-1 ring-gray-300
+            bg-white
+          "
+        >
+          <h1
+            class="
+              text-center text-3xl
+              md:text-5xl
+              font-bold
+              uppercase
+              pb-2
+              md:pb-4
+            "
+          >
+            Poll Name</span>
+          </h1>
+          <p class="text-center text-xs
+              md:text-sm
+              pb-2
+              md:pb-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae alias hic voluptate dolor sed iure perferendis, earum voluptatum assumenda laborum amet a cum velit aperiam temporibus soluta.</p>
+
+
+        <!-- Result Section Start -->
+          <div class="p-4 md:p-8">
+           <h1
+            class="
+              text-md
+              md:text-2xl
+              font-bold
+              pb-2
+              md:pb-2
+              text-blue-500
+            "
+          >
+            Result :</span>
+
+          </h1>
+          <ul>
+              <li
+                class="
+                px-4 py-4
+                  md:px-8
+                  md:py-4
+                  border
+                  text-md
+                  md:text-2xl
+                  rounded
+                  font-normal
+                  text-black-400
+                  hover:text-blue-500
+                  my-2
+                  flex
+                  items-center
+                "
+              >
+                <a href="#" class="w-1/2 md:w-3/4">Poll Number 1</a>
+                <div class=" w-1/2 md:w-1/4">
+                    <div class="bg-blue-100 p-3 md:p-4 rounded-lg"></div>
+                    <div id="bar" class="bg-blue-600 p-1 rounded-lg " style="width:30%"><p class="text-center text-white text-xs md:text-sm">30%</p></div>
+                </div>
+              </li>
+
+
+               <li
+                class="
+                px-4 py-4
+                  md:px-8
+                  md:py-4
+                  border
+                  text-md
+                  md:text-2xl
+                  rounded
+                  font-normal
+                  text-black-400
+                  hover:text-blue-500
+                  my-2
+                  flex
+                  items-center
+                "
+              >
+                <a href="#" class="w-1/2 md:w-3/4">Poll Number 2</a>
+                <div class=" w-1/2 md:w-1/4">
+                    <div class="bg-blue-100 p-3 md:p-4 rounded-lg" ></div>
+                    <div id="bar" class="bg-blue-600 p-1 rounded-lg " style="width:90%"><p class="text-center text-white text-xs md:text-sm">90%</p></div>
+                </div>
+              </li>
+
+            </ul>
+          </div>
+        <!-- Result Section End -->
+        <!-- Opinion Section Start-->
+           <div class="p-4 md:p-6">
+           <h1
+
+            class="
+              text-md
+              md:text-2xl
+              font-bold
+              pb-2
+              md:pb-2
+              text-blue-500
+            "
+          >Your Opinion :
+
+          </h1>
+            <!-- Poll Opinion : -->
+            <div id="opinions">
+                <form action="">
+                    <input type="radio" id="option1" name="fav_language" value="Post Number 1">
+                    <label for="option1" class="text-md md:text-2xl">Post Number 1</label><br>
+
+                    <input type="radio" id="option2" name="fav_language" value="Post Number 2">
+                    <label for="option2" class="text-md md:text-2xl">Post Number 2</label><br>
+                    
+                    <input type="submit" value="Submit Your Opinion" class="mx-auto
+                    my-5
+                    md:my-5
+                    w-full
+                    text-md
+                    md:text-xl
+                    py-4
+                    bg-blue-600
+                    rounded-2xl
+                    text-white
+                    uppercase
+                    shadow
+                    hover:bg-blue-800
+                    cursor-pointer">
+                </form>
+                
+            </div>
+          </div>
+        <!-- Opinion Section End-->
+
+
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
